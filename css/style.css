@@ -1,0 +1,83 @@
+* {
+  margin: 2px;
+}
+body {
+  background-color: rgb(225, 254, 254);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container2 {
+  display: grid;
+  grid:
+    "header header header"
+    "nav article aside"
+    "footer footer footer";
+}
+
+.header {
+  grid-area: header;
+  background-color: rgb(144, 246, 158);
+}
+.nav {
+  grid-area: nav;
+  background-color: rgb(186, 160, 230);
+}
+.article {
+  grid-area: article;
+  background-color: rgb(96, 172, 89);
+}
+.aside {
+  grid-area: aside;
+  background-color: rgb(215, 145, 211);
+}
+.footer {
+  grid-area: footer;
+  background-color: rgb(226, 231, 142);
+}
+
+.button {
+  margin-left: 50%;
+}
+
+table {
+  border-style: outset;
+  border-color: black;
+  border-collapse: collapse;
+}
+th {
+  border-style: outset;
+  border-color: black;
+  background-color: rgb(235, 160, 160);
+}
+td {
+  border-style: outset;
+  border-color: black;
+  background-color: antiquewhite;
+  padding: 5px;
+}
+
+.img_column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+}
+
+img:hover {
+  cursor: pointer;
+  transform: scale(3);
+}
